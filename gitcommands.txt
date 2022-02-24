@@ -1,0 +1,63 @@
+E:\JSWorkspace\Btechproj>git init
+Reinitialized existing Git repository in E:/JSWorkspace/Btechproj/.git/
+
+E:\JSWorkspace\Btechproj>git config --global user.email "manojkammari@gmail.com"
+
+E:\JSWorkspace\Btechproj>git config --global user.name "ManojKammari"
+
+E:\JSWorkspace\Btechproj>git config --global user.password "manojkammari143#"
+
+E:\JSWorkspace\Btechproj>git branch
+* proj
+git remote add origin https://github.com/ManojKammari/Project1.git
+
+E:\JSWorkspace\Btechproj>git add .\fun.html
+
+E:\JSWorkspace\Btechproj>git add .\kids.html
+
+E:\JSWorkspace\Btechproj>git add .\food.html
+
+E:\JSWorkspace\Btechproj>git add .\men.html
+
+E:\JSWorkspace\Btechproj>git add .\women.html
+
+E:\JSWorkspace\Btechproj>git add .\index.html
+
+E:\JSWorkspace\Btechproj>git status
+On branch proj
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fun.html
+        new file:   kids.html
+        new file:   men.html
+        new file:   women.html
+		
+E:\JSWorkspace\Btechproj>git commit -m "commit files"
+[proj e1f25fd] commit files
+ 4 files changed, 92 insertions(+)
+ create mode 100644 fun.html
+ create mode 100644 kids.html
+ create mode 100644 men.html
+ create mode 100644 women.html
+ 
+ 
+ git add .\learn\   ---> to add folder to github
+     <a href="\html\index.html" >Homepage</a>
+        <a href="\html\audio.html" >Audios</a>
+        <a href="\html\About.html" >About us</a>       -----> .\ used to get  html files from that folder
+ 
+ E:\JSWorkspace\Btechproj>git push --set-upstream origin proj
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 2.49 KiB | 1.25 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/ManojKammari/Repo2Btech.git
+ * [new branch]      proj -> proj
+branch 'proj' set up to track 'origin/proj'.
+
+E:\JSWorkspace\Btechproj>git remote -v
+origin  https://github.com/ManojKammari/Repo2Btech.git (fetch)
+origin  https://github.com/ManojKammari/Repo2Btech.git (push)

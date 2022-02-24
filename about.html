@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color: limegreen;
+        font-size:10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+    }
+    h2{
+            text-align: center;
+            font-size: 60px;
+            font-weight: bolder;
+            color:indigo;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cadetblue;
+    }
+    a{
+        font-size: 18px;
+        font-weight: bold;
+        /* margin: 10px;
+        padding:10px; */
+        text-decoration: none;
+        background-color: teal;
+    }
+    a:hover{
+            padding:10px;
+            margin-left:5px;
+            cursor: pointer;
+            transform: 0.5s ease;
+            color:tomato;
+            background-color: whitesmoke;
+        }
+    .links{
+        
+        width: 100%;
+        height: 60px;
+        clear:left;
+        line-height: 50px;
+        /* display: flex;
+        /* flex: 0 0 150px; 
+        justify-content: center; */
+        text-align: center;
+    }
+    .links a{
+        margin:10px;
+        padding:10px;
+    }
+    .Details{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background-color: rgba(238, 50, 43, 0.808);
+        width:100%;
+        height: 290px;
+        font-size: 15px;
+        text-align: center;
+    }
+    #btn1{
+        color:white;
+        background-color: green;
+        font-size:19px;
+         }
+    #btn1:hover{
+        color:green;
+        background-color: white; 
+         }
+</style>
+<body>
+    <h2> About Section </h2>
+    <div class="Details">
+            <fieldset>
+              <legend>Personal details:</legend>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br><br>
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday"><br><br>
+              <label for="Queries">Queries:</label>
+              <textarea rows="5" cols="30">
+              </textarea>
+              <br><br>
+              <button id="btn1" onclick="submitfunc()">Submit</button>
+            </fieldset>
+            <p id="demo"></p>
+    </div>
+    <div class="links">
+        <a href="index.html" >Homepage</a>
+        <a href="video.html" >Videos</a>
+        <a href="audio.html" >Audios</a> 
+    </div>
+    <script>
+        let sub=document.getElementById("demo");
+        function submitfunc(){
+            document.location.href="new.html";
+            
+        }
+    </script>
+</body>
+</html>
